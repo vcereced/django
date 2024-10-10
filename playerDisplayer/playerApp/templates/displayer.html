@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    {% load static %}
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>displayer</title>
+    <link rel="stylesheet" href="{% static 'css/displayer.css' %}">
+</head>
+<body>
+    <h1>Displayer</h1>
+    {% if item.image %}
+        <img src="{{ item.image.url }}" alt="Imagen de {{ item.name }}">
+    {% endif %}
+    <table>
+        <thead>
+            <tr>
+                <th>Name</th>
+            </tr>
+        </thead>
+        <tbody>
+                <tr>
+                    <td>{{ item.name }}</td>
+                </tr>
+        </tbody>
+    </table>
+    <table>
+        <thead>
+            <tr>
+                <th>Fire</th>
+                <th>Water</th>
+                <th>Ground</th>
+            </tr>
+        </thead>
+        <tbody>
+                <tr>
+                    <td>{{ item.fire }}</td>
+                    <td>{{ item.water }}</td>
+                    <td>{{ item.ground }}</td>
+                </tr>
+        </tbody>
+    </table>
+    <table>
+        <thead>
+            <tr>
+                <th>Description</th>
+            </tr>
+        </thead>
+        <tbody>
+                <tr>
+                    <td>{{ item.description }}</td>
+                </tr>
+        </tbody>
+    </table>
+    
+    <div class="navigation">
+        {% if before_item %}
+            <a href="{% url 'displayer' before_item.id %}" class="button">before</a>
+        {% endif %}
+        {% if next_item %}
+            <a href="{% url 'displayer' next_item.id %}" class="button">next</a>
+        {% endif %}
+    </div>
+
+</body>
+</html>

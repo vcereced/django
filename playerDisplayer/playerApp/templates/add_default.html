@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    {% load static %}  <!-- Cargar archivos estáticos -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Añadir Usuario</title>
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
+    <link rel="stylesheet" href="{% static 'css/style_form.css' %}">
+</head>
+<body>
+    <h1>Añadir Usuario al Modelo Default</h1>
+    
+    <form method="POST" enctype="multipart/form-data">
+        {% csrf_token %}
+        {{ form.as_p }}  <!-- Muestra el formulario -->
+        <button type="submit">Añadir Usuario</button>
+    </form>
+    
+    <a href="{% url 'index' %}" >go back</a>
+</body>
+</html>

@@ -1,0 +1,59 @@
+.container {
+    width: 95%; /* Ajusta el ancho según sea necesario */
+    margin: 20px auto; /* Centra el contenedor y añade espacio arriba y abajo */
+    padding: 10px;
+    border-radius: 10px; /* Bordes redondeados */
+    background-color: rgba(196, 207, 161, 0.9);
+
+    max-height: 500px; /* Limita la altura máxima del contenedor */
+    max-height: 500px; /* Limita la altura máxima del contenedor */
+    height: auto; /* Asegura que el contenedor crezca con el contenido */
+   
+    overflow: hidden; /* Esconde el exceso de imagen si supera la altura */
+}
+
+.parent {
+    margin: 10px;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: repeat(7, 1fr);
+    gap: 8px;
+    padding: 5px; /* Espacio alrededor del texto */
+    font-size: 24px; /* Tamaño de texto más grande */
+    display: flex; /* Usamos flexbox para centrar el texto */
+    
+    text-align: center; 
+}
+
+
+.div1, .div2 {
+    border-radius: 10px;
+    background-color: rgba(253, 250, 250, 0.9); /* Fondo gris transparente */
+    color: #000000;
+    padding: 40px; /* Espacio interno (padding) */
+    box-sizing: border-box; /* Asegura que el padding no haga crecer el tamaño del div */
+    position: relative; 
+}
+
+.div1 {
+    grid-column: span 2 / span 2;
+    grid-row: span 1 / span 1;
+    display: flex; /* Usamos flexbox para centrar el texto */
+    align-items: center; /* Centra el texto verticalmente */
+    justify-content: center; /* Centra el texto horizontalmente */
+    text-align: center; /* Asegura que el texto también se alinee en el centro */
+    font-size: 25px
+}
+
+.user{
+    font-size: 15px;
+    padding: 10px;
+}
+
+.no-underline {
+    text-decoration: none; /* Elimina el subrayado */
+    color: inherit; /* Mantiene el color del contenedor */
+}
+

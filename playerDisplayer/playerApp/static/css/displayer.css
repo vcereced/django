@@ -1,0 +1,59 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 20px; /* Agregar algo de padding alrededor del contenido */
+}
+
+h1 {
+    text-align: center; /* Centrar el título */
+    margin-bottom: 20px; /* Espacio inferior del título */
+}
+
+table {
+    width: 100%; /* Hacer que la tabla ocupe todo el ancho */
+    border-collapse: collapse; /* Colapsar bordes de la tabla */
+    margin-bottom: 20px; /* Espacio entre tablas */
+    background-color: white; /* Fondo blanco para las tablas */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Sombra ligera para un efecto 3D */
+}
+
+th, td {
+    padding: 10px; /* Espacio interno para celdas */
+    text-align: left; /* Alinear texto a la izquierda */
+    border: 1px solid #ddd; /* Borde ligero para las celdas */
+}
+
+th {
+    background-color: #f0f0f0; /* Fondo para las cabeceras */
+    color: #333; /* Color del texto de la cabecera */
+}
+
+.navigation {
+    display: flex; /* Usar flexbox para alinear botones */
+    justify-content: center; /* Centrar botones horizontalmente */
+    margin-top: 20px; /* Espacio superior para separación */
+}
+
+.button {
+    margin: 0 10px; /* Espacio entre botones */
+    text-decoration: none; /* Sin subrayado */
+    padding: 10px 15px; /* Espaciado interno para los botones */
+    border: 1px solid #007BFF; /* Borde azul */
+    border-radius: 5px; /* Bordes redondeados */
+    background-color: #007BFF; /* Fondo azul */
+    color: white; /* Color del texto */
+    transition: background-color 0.3s ease; /* Transición suave para el color de fondo */
+}
+
+.button:hover {
+    background-color: #0056b3; /* Cambiar a un azul más oscuro al pasar el ratón */
+}
+
+img {
+    max-width: 40%;  /* Asegura que la imagen no exceda el ancho del contenedor */
+  
+    height: auto;     /* Mantiene la proporción de la imagen */
+    display: block;   /* Elimina el espacio en línea debajo de la imagen */
+    margin: 0 auto;  /* Centra la imagen si está en un contenedor de ancho fijo */
+}

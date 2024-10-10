@@ -1,0 +1,111 @@
+.container {
+    width: 95%; /* Ajusta el ancho según sea necesario */
+    margin: 20px auto; /* Centra el contenedor y añade espacio arriba y abajo */
+    padding: 10px;
+    border-radius: 10px; /* Bordes redondeados */
+    background-size: cover; /* Hace que la imagen cubra el fondo del contenedor */
+    background-position:center; /* Centra la imagen de fondo */
+    min-height: 200px; /* Ajusta el mínimo de altura del contenedor */
+
+}
+
+.parent {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: repeat(7, 1fr);
+    gap: 8px;
+    padding: 5px; /* Espacio alrededor del texto */
+    font-size: 24px; /* Tamaño de texto más grande */
+}
+
+.div1, .div2, .div3, .div4, .div5, .div6, .div7 {
+    border-radius: 10px;
+    background-color: rgba(253, 250, 250, 0.9); /* Fondo gris transparente */
+    color: #000000;
+    padding: 10px; /* Espacio interno (padding) */
+    box-sizing: border-box; /* Asegura que el padding no haga crecer el tamaño del div */
+    position: relative; 
+}
+
+.div1 {
+    grid-column: span 3 / span 3;
+    grid-row: span 2 / span 2;
+    display: flex; /* Usamos flexbox para centrar el texto */
+    align-items: center; /* Centra el texto verticalmente */
+    justify-content: center; /* Centra el texto horizontalmente */
+    text-align: center; /* Asegura que el texto también se alinee en el centro */
+    font-size: 50px;
+}
+
+.div2 {
+    grid-column: span 2 / span 2;
+    grid-column-start: 1;
+    grid-row-start: 3;
+    grid-row: span 2 / span 2;
+    display: flex; /* Usamos flexbox para centrar el texto */
+    align-items: center; /* Centra el texto verticalmente */
+    justify-content: center; /* Centra el texto horizontalmente */
+    text-align: center; /* Asegura que el texto también se alinee en el centro */
+    font-size: 40px;
+}
+
+.div3 {
+    grid-column: span 2 ;
+    grid-row: span 3 / span 2;
+
+    grid-column-start: 1;
+    grid-row-start: 6;
+    display: flex; /* Usamos flexbox para centrar el texto */
+    align-items: center; /* Centra el texto verticalmente */
+    justify-content: center; /* Centra el texto horizontalmente */
+    text-align: center; /* Asegura que el texto también se alinee en el centro */
+    font-size: 40px;
+}
+
+.div4 {
+    grid-column: span 1 / span 1;
+    grid-row: span 1 / span 1;
+    grid-column-start: 2;
+    grid-row-start: 6;
+    display: flex; /* Usamos flexbox para centrar el texto */
+    align-items: center; /* Centra el texto verticalmente */
+    justify-content: center; /* Centra el texto horizontalmente */
+    text-align: center;
+    font-size: 25px; 
+
+}
+
+.div3:hover{
+    background-color: rgba(86, 89, 86, 0.9); /* Fondo ligeramente visible al hacer hover */
+}
+
+.div4 a {
+    display: block; /* Hace que el enlace ocupe todo el espacio del div */
+    width: 100%; /* Ancho completo del div */
+    height: 100%; /* Altura completa del div */ 
+}
+.div4:hover{
+    background-color: rgba(86, 89, 86, 0.9); /* Fondo ligeramente visible al hacer hover */
+}
+
+
+.div5 {
+    grid-column: span 1 / span 1;
+    grid-row: span 1 / span 1;
+    grid-column-start: 2;
+    grid-row-start: 7;
+    display: flex; /* Usamos flexbox para centrar el texto */
+    align-items: center; /* Centra el texto verticalmente */
+    justify-content: center; /* Centra el texto horizontalmente */
+    text-align: center;
+    font-size: 25px; 
+}
+
+.div6 {
+    grid-row: span 5 / span 5;
+    grid-column-start: 5;
+    grid-row-start: 3;
+    display: flex; /* Usamos flexbox para centrar el texto */
+    text-align: center; 
+}
+

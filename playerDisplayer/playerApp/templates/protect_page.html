@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    {% load static %}
+    <link rel="stylesheet" href="{% static 'css/protect_page.css' %}">
+    <link rel="stylesheet" href="{% static 'css/general.css' %}">
+</head>
+<body>
+
+    <div class="container" style="background-image: url('{% static 'images/retro.png' %}');">
+
+        <div class="parent">
+            <div class="div1">Welcome to the field!</div>
+
+            <div class="div2">
+                {{ username }}
+            </div>
+
+            <div class="div3">
+                play
+            </div>
+
+
+            <div class="div4" >
+                <a class="no-underline" href="{% url 'stats' %}">stats</a>
+            </div>
+
+            <div class="div5">
+                chat <br/> <div class="sangria"> {{ item.wins }} </div>
+            </div>
+            <div class="div6">
+                next tournament
+            </div>
+            
+        </div>
+    </div>
+
+    <div class="button">
+        <form action="{% url 'logout' %}" method="post">
+            {% csrf_token %}
+            <button type="submit">log out</button>
+        </form>
+    </div>
+
+
+
+
+
+
+    
+
+   
+    
+
+    <p>Es administrador: {% if is_staff %}Sí{% else %}No{% endif %}</p>
+</body>
+</html>

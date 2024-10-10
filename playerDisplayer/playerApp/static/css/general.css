@@ -1,0 +1,45 @@
+.button {
+    
+    font-size: 24px;
+    border-radius: 10px;
+    background-color: rgba(86, 89, 86, 1);
+    color: #000000;
+    width: 15%;
+
+  
+    text-align: center;
+    margin: 0 auto; 
+}
+
+.no-underline {
+    text-decoration: none; /* Elimina el subrayado */
+    color: inherit; /* Mantiene el color del contenedor */
+}
+
+
+.button form button {
+    background-color: transparent; /* Hace el fondo del botón transparente */
+    border: none; /* Elimina el borde */
+    color: inherit; /* Mantiene el color del texto o hereda del contenedor */
+    font-size: 24px; /* Ajusta el tamaño del texto */
+    cursor: pointer; /* Cambia el cursor al pasar sobre el botón */
+    padding: 10px; /* Ajusta el padding interno */
+    border-radius: 10px; /* Bordes redondeados */
+    text-align: center;
+    width: 100%; /* Ancho completo del div */
+    height: 100%; /* Altura completa del div */ 
+}
+
+
+.button a {
+    padding: 10px;
+    margin-left: -10px;
+    display: block; /* Hace que el enlace ocupe todo el espacio del div */
+    width: 100%; /* Ancho completo del div */
+    height: 100%; /* Altura completa del div */ 
+
+}
+.button form button:hover {
+    background-color: rgba(175, 172, 175, 0.2); /* Fondo ligeramente visible al hacer hover */
+}
+

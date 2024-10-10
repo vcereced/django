@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    {% load static %}
+    <link rel="stylesheet" href="{% static 'css/stats.css' %}">
+    <link rel="stylesheet" href="{% static 'css/general.css' %}">
+</head>
+<body>
+
+    <div class="container" style="background-image: url('{% static 'images/retro.png' %}');">
+
+        <div class="parent">
+            <div class="div1">{{ usuario.username }}</div>
+            <div class="div2">
+                level <br/> <div class="sangria"> {{ item.level }} </div>
+            </div>
+
+            <div class="div3">
+                coins <br/> <div class="sangria"> {{ item.coins }} </div>
+            </div>
+
+            <div class="div4">
+                rounds <br/>  <div class="sangria"> {{ item.rounds }} </div>
+            </div>
+            <div class="div5">
+                wins <br/> <div class="sangria"> {{ item.wins }} </div>
+            </div>
+            <div class="div6">
+                loss <br/> <div class="sangria"> {{ item.loss }} </div>
+            </div>
+            <div class="div7">{{ item.date }}</div>
+        </div>
+    </div>
+    
+    <div class="button">
+        <a href="{% url 'protect_page' %}" class="no-underline">back</a>
+    </div>
+
+</body>
+</html> 

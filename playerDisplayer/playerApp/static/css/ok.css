@@ -1,0 +1,64 @@
+.container {
+    width: 95%; /* Ajusta el ancho según sea necesario */
+    margin: 20px auto; /* Centra el contenedor y añade espacio arriba y abajo */
+    padding: 10px;
+    border-radius: 10px; /* Bordes redondeados */
+    background-color: rgba(196, 207, 161, 0.9);
+    min-height: 450px; /* Limita la altura máxima del contenedor */
+    max-height: 450px; /* Limita la altura máxima del contenedor */
+    height: auto; /* Asegura que el contenedor crezca con el contenido */
+}
+
+.parent {
+    margin: 10px;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    padding: 5px; /* Espacio alrededor del texto */
+    font-size: 24px; /* Tamaño de texto más grande */
+    
+    /* Centrando el contenido de los elementos hijos */
+    display: flex;
+    justify-content: center; /* Centra horizontalmente */
+    align-items: center; /* Centra verticalmente */
+    flex-direction: column; /* Asegura que los hijos se alineen en una columna */
+    text-align: center; /* Alinea el texto de los elementos hijos al centro */
+}
+
+.div1{
+    margin-top: 90px;
+    margin-bottom: 20px;
+}
+
+.div2 {
+    border-radius: 10px;
+    background-color: rgba(253, 250, 250, 0.9); /* Fondo gris transparente */
+    color: #000000;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    padding-left: 50px;
+    padding-right: 50px;
+    
+    box-sizing: border-box; /* Asegura que el padding no haga crecer el tamaño del div */
+    position: relative;
+    
+    /* Para centrar verticalmente */
+    display: flex;
+    justify-content: center; /* Centra horizontalmente */
+    align-items: center; /* Centra verticalmente */
+    text-align: center; /* Asegura que el texto esté alineado al centro */
+}
+
+.div2 a {
+    display: block; /* Hace que el enlace ocupe todo el espacio del div */
+    width: 100%; /* Ancho completo del div */
+    height: 100%; /* Altura completa del div */ 
+}
+.div2:hover{
+    background-color: rgba(86, 89, 86, 0.9); /* Fondo ligeramente visible al hacer hover */
+}
+
+
+.no-underline {
+    text-decoration: none; /* Elimina el subrayado */
+    color: inherit; /* Mantiene el color del contenedor */
+}
